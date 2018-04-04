@@ -1,0 +1,127 @@
+html {
+    min-height: 100%;
+    font-family: Verdana;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+    background-color: #1fc8db;
+    height: 100%;
+}
+
+#main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    height: 100%;
+    overflow: hidden;
+}
+
+#apresentacao {
+    width: 500px;
+    height: 500px;
+    margin-top: 130px;
+    margin-left: 100px;
+    float: left;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+#apresentacao p {
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#apresentacao li {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+#apresentacao a {
+    width: 180px;
+    height: 50px;
+    margin-top: 80px;
+    background-color: #008000;
+    text-decoration: none;
+    display: block;
+    margin-left: auto;
+	margin-right: auto;
+    line-height: 50px;
+    color: #ffffff;
+    box-sizing: border-box;
+    padding-left: 10px;
+    font-size: 20px;
+    position: relative;
+}
+
+#apresentacao a:hover {
+    background-color: #005500;
+}
+
+#apresentacao a img {
+    position: absolute;
+    right: 10px;
+    margin-top: 12px;
+    height: 26px;
+    width: 26px;
+}
+
+#galeria {
+    width: 500px;
+    height: 700px;
+    float: right;
+    position: relative;
+    margin-right: 50px;
+    margin-top: 100px;
+}
+
+#celular {
+    position: absolute;
+    width: 500px;
+    height: 700px;
+}
+
+#imagens {
+    width: 320px;
+    height: 549px;
+    margin-top: 66px;
+    margin-left: 89px;
+}
+
+#imagens img {
+    width: 100%;
+    height: 100%;
+}
+
+#slider {
+    width: 320px;
+    height: 549px;
+    margin-left: auto;
+	margin-right: auto;
+    overflow: hidden;
+	margin-top: 10px;
+}
+
+#slider img {
+    width: 320px;
+    height: 549px;
+}
+
+#slider ul {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#slider ul li {
+    float: left;
+    width: 320px;
+    height: 549px;
+}

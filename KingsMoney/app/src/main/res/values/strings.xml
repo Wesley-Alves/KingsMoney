@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Kings Money</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_categoria">CategoriaActivity</string>
+    <string name="title_activity_adicionar_categoria">AdicionarCategoriaActivity</string>
+    <string name="title_activity_lancamentos">LancamentosActivity</string>
+    <string name="title_activity_adicionar_lancamento">AdicionarLancamentoActivity</string>
+    <string name="title_activity_visualizar_lancamento">VisualizarLancamentoActivity</string>
+    <string name="title_activity_estatisticas">EstatisticasActivity</string>
+</resources>

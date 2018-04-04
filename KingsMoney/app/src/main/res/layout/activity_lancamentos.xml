@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.senaijandira.kingsmoney.LancamentosActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="Lançamentos" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_lancamentos" />
+
+    <View
+        android:id="@+id/fab_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#b3cacaca"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/fab_add_receita_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="23dp"
+        android:clipToPadding="false"
+        android:gravity="center_vertical"
+        android:layout_gravity="bottom|end"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Receita" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_add_receita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            app:srcCompat="@android:drawable/ic_input_add"
+            android:tint="#ffffff"
+            app:backgroundTint="@color/colorPrimary"
+            app:fabSize="mini" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fab_add_despesa_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="23dp"
+        android:clipToPadding="false"
+        android:gravity="center_vertical"
+        android:layout_gravity="bottom|end"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Despesa" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_add_despesa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            app:srcCompat="@android:drawable/ic_input_add"
+            android:tint="#ffffff"
+            app:backgroundTint="@color/colorPrimaryNegative"
+            app:fabSize="mini"/>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_add_lancamento"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_input_add"
+        app:backgroundTint="@color/colorPrimary"
+        android:tint="#ffffff" />
+</android.support.design.widget.CoordinatorLayout>

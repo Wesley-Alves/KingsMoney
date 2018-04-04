@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <LinearLayout
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/circle"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_horizontal|center_vertical">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@android:drawable/ic_menu_camera"
+            android:id="@+id/img_item_categoria_foto" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_item_categoria_nome"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:maxLength="32" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_mode_edit_black_24dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:id="@+id/img_editar_categoria"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_delete_black_24dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:id="@+id/img_deletar_categoria"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+    </LinearLayout>
+</LinearLayout>

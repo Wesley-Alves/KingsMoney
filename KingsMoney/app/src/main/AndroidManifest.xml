@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.senaijandira.kingsmoney">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icone_dolar"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CategoriasActivity"
+            android:label="@string/title_activity_categoria"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.senaijandira.kingsmoney.MainActivity" />
+        </activity>
+        <activity
+            android:name=".AdicionarCategoriaActivity"
+            android:label="@string/title_activity_adicionar_categoria"
+            android:parentActivityName=".CategoriasActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.senaijandira.kingsmoney.CategoriasActivity" />
+        </activity>
+        <activity
+            android:name=".LancamentosActivity"
+            android:label="@string/title_activity_lancamentos"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.senaijandira.kingsmoney.MainActivity" />
+        </activity>
+        <activity
+            android:name=".AdicionarLancamentoActivity"
+            android:label="@string/title_activity_adicionar_lancamento"
+            android:parentActivityName=".LancamentosActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.senaijandira.kingsmoney.LancamentosActivity" />
+        </activity>
+        <activity
+            android:name=".VisualizarLancamentoActivity"
+            android:label="@string/title_activity_visualizar_lancamento"
+            android:parentActivityName=".LancamentosActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.senaijandira.kingsmoney.LancamentosActivity" />
+        </activity>
+        <activity
+            android:name=".EstatisticasActivity"
+            android:label="@string/title_activity_estatisticas"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.senaijandira.kingsmoney.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>
